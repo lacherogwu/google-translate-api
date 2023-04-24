@@ -1,0 +1,56 @@
+[
+	[null, null, null, [[[0, [[[null, 5]], [true]]]], 5], [["מבטיח", null, null, 5]], null, ["מבטיח", "iw", "en", true]],
+	[
+		[
+			[
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					[
+						"promising",
+						null,
+						null,
+						null,
+						[
+							["promising", [3, 5], []],
+							["Promise", [11], []]
+						]
+					]
+				]
+			]
+		],
+		"en",
+		1,
+		"iw",
+		["מבטיח", "iw", "en", true]
+	],
+	"iw",
+	[
+		"מַבְטִיחַ",
+		null,
+		null,
+		[["הבטיח"], null, 1],
+		null,
+		[
+			[
+				[
+					"adjective",
+					[
+						["promising", null, ["מַבְטִיחַ", "בַּעַל סִכּוּיִם טוֹבִים"], 1, true],
+						["up and coming", null, ["מוּכשָׁר", "מַבְטִיחַ"], 3, true]
+					],
+					"en",
+					"iw"
+				]
+			],
+			2
+		],
+		null,
+		null,
+		"iw",
+		1
+	]
+]

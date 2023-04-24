@@ -1,0 +1,7 @@
+)]}'
+
+1037
+[["wrb.fr","MkEWBc","[[\"ˈmistər\",null,null,[[[0,[[[null,6]],[true]]]],6],[[\"mister\",null,null,6]],null,[\"mister\",\"en\",\"de\",true]],[[[\"Herrin\",null,\"(feminine)\",null,null,null,null,1],[\"Herr\",null,\"(masculine)\",null,null,null,null,2]],\"de\",2,\"en\",[\"mister\",\"en\",\"de\",true]],\"en\",[\"mister\",[[[\"noun\",[[\"variant form of Mr., often used humorously or with offensive emphasis.\",\"don't back-talk me, mister!\",true],[\"a device, such as a bottle, with a nozzle for spraying a mist of water, especially on houseplants.\",null,true]],null,1]],2],[[[null,\"don't back-talk me, \\u003cb\\u003emister\\u003c/b\\u003e!\"],[null,\"thanks, \\u003cb\\u003emister\\u003c/b\\u003e\"]],null,2],null,null,[[[\"noun\",[[\"Herr\",\"der\",[\"Lord\",\"gentleman\",\"master\",\"mister\",\"sir\",\"ruler\"],1,true],[\"Herrn\",\"der\",[\"mister\"],1,true],[\"Hr.\",\"der\",[\"mister\"],3,true]],\"de\",\"en\"]],3],\"ˈmistər\",null,\"en\",1]]",null,null,null,"generic"],["di",752],["af.httprm",751,"-2189513243466972657",45]]
+26
+[["e",4,null,null,1079]]
+

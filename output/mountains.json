@@ -1,0 +1,57 @@
+[
+	[null, null, "iw", [[[0, [[[null, 4]], [true]]]], 4], [["הרים", null, null, 4]], null, ["הרים", "auto", "en", true]],
+	[
+		[
+			[
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					[
+						"Mountains",
+						null,
+						null,
+						null,
+						[
+							["Mountains", [5], []],
+							["Mountains", [11], []]
+						]
+					]
+				]
+			]
+		],
+		"en",
+		1,
+		"iw",
+		["הרים", "auto", "en", true]
+	],
+	"iw",
+	[
+		"הַר",
+		null,
+		null,
+		[["הר"], null, 1],
+		null,
+		[
+			[
+				[
+					"noun",
+					[
+						["mountain", null, ["הַר", "גִבעָה", "רֶכֶס"], 1, true],
+						["mount", null, ["הַר", "גִבעָה", "כֵּן", "מַתלֶה", "מֶרְכָּב", "סוּס רְכִיבָה"], 2, true],
+						["height", null, ["גוֹבַה", "שִׂיא", "רוּם", "רוֹם", "מָרוֹם", "רָמָה"], 3, true]
+					],
+					"en",
+					"iw"
+				]
+			],
+			3
+		],
+		null,
+		null,
+		"iw",
+		1
+	]
+]

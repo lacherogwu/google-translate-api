@@ -1,0 +1,7 @@
+)]}'
+
+1040
+[["wrb.fr","MkEWBc","[[\"ˈpōSH(ə)n\",null,null,[[[0,[[[null,6]],[true]]]],6],[[\"potion\",null,null,6]],null,[\"potion\",\"en\",\"ar\",true]],[[[null,\"jurea\",null,null,null,[[\"جرعة\",null,null,null,[[\"جرعة\",[3,5],[]],[\"الجرعة\",[11],[]]]]]]],\"ar\",1,\"en\",[\"potion\",\"en\",\"ar\",true]],\"en\",[\"potion\",[[[\"noun\",[[\"a liquid with healing, magical, or poisonous properties.\",\"a healing potion\",true,null,null,[[[[\"concoction\"],[\"mixture\"],[\"brew\"],[\"elixir\"],[\"philter\"],[\"drink\"],[\"decoction\"],[\"medicine\"],[\"tincture\"],[\"tonic\"]]],[[[\"draft\"]],[[\"literary\"]]],[[[\"potation\"]],[[\"archaic\"]]]]]],null,1]],1],[[[null,\"a healing \\u003cb\\u003epotion\\u003c/b\\u003e\"]],null,1],null,null,[[[\"noun\",[[\"جرعة\",null,[\"dose\",\"dosage\",\"potion\",\"gulp\",\"mouthful\",\"swallow\"],1,true],[\"جرعة دواء\",null,[\"potion\",\"dose\",\"dosage\",\"drop\"],2,true]],\"ar\",\"en\"]],2],\"ˈpōSH(ə)n\",null,\"en\",1]]",null,null,null,"generic"],["di",767],["af.httprm",767,"8489654106032160523",44]]
+26
+[["e",4,null,null,1110]]
+

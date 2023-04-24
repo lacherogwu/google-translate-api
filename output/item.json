@@ -1,0 +1,87 @@
+[
+	["ˈīdəm", null, null, [[[0, [[[null, 4]], [true]]]], 4], [["item", null, null, 4]], null, ["item", "en", "de", true]],
+	[
+		[
+			[
+				null,
+				null,
+				null,
+				null,
+				null,
+				[
+					[
+						"Artikel",
+						null,
+						null,
+						null,
+						[
+							["Artikel", [4, 11], []],
+							["Gegenstand", [4, 5], []],
+							["Posten", [4], []]
+						]
+					]
+				]
+			]
+		],
+		"de",
+		1,
+		"en",
+		["item", "en", "de", true]
+	],
+	"en",
+	[
+		"item",
+		[
+			[
+				[
+					"noun",
+					[
+						[
+							"an individual article or unit, especially one that is part of a list, collection, or set.",
+							"the items on the agenda",
+							true,
+							null,
+							null,
+							[[[["thing"], ["article"], ["object"], ["unit"], ["module"], ["artifact"], ["piece"], ["commodity"], ["product"], ["bit"], ["element"], ["constituent"], ["component"], ["ingredient"]]]]
+						]
+					],
+					null,
+					1
+				],
+				["adverb", [["used to introduce each item in a list.", "item two statute books … item two drums", true]], [["archaic"]], 4]
+			],
+			2
+		],
+		[[[null, "an \\u003cb\\u003eitem\\u003c/b\\u003e of clothing"]], null, 1],
+		null,
+		null,
+		[
+			[
+				[
+					"noun",
+					[
+						["Artikel", "der", ["article", "item", "piece", "commodity"], 1, true],
+						["Punkt", "der", ["point", "spot", "dot", "item", "period", "mark"], 2, true],
+						["Stück", "das", ["piece", "item", "part", "play", "bit", "portion"], 2, true],
+						["Gegenstand", "der", ["object", "subject", "article", "item", "topic", "thing"], 2, true],
+						["Posten", "der", ["item", "post", "position", "job", "lot", "guard"], 2, true],
+						["Nummer", "die", ["number", "item"], 2, true],
+						["Ding", "das", ["thing", "object", "item", "entity"], 3, true],
+						["Gut", "das", ["good", "estate", "property", "goods", "material", "item"], 3, true],
+						["Bericht", "der", ["report", "account", "story", "narrative", "tale", "news copy"], 3, true],
+						["Meldung", "die", ["message", "notification", "report", "announcement", "enrollment", "enrolment"], 3, true],
+						["Paragraph", "der", ["paragraph", "section", "article"], 3, true],
+						["Rechnungsposten", "der", ["item"], 3, true]
+					],
+					"de",
+					"en"
+				]
+			],
+			12
+		],
+		"ˈīdəm",
+		null,
+		"en",
+		1
+	]
+]
