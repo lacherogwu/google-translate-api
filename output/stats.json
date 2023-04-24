@@ -48,5 +48,7 @@
 			]
 		], 
 		null, 
-		[["stat"], null, 1], null, null, "stats", null, "en", 1]
+		[
+			["stat"]
+		, null, 1], null, null, "stats", null, "en", 1]
 ]

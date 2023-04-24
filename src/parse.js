@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 
-const filename = 'test';
+const filename = 'potion';
 const jsonRaw = await fs.readFile(`./output/${filename}.json`, 'utf-8');
 
 /** @type {Array} */
@@ -8,7 +8,7 @@ const json = JSON.parse(jsonRaw);
 // console.log(json.at(-1).at(5));
 // console.log(JSON.stringify(json[0], null, 2));
 
-console.log(parse(json));
+console.log(JSON.stringify(parse(json), null, 2));
 
 /** @param {Array} data */
 function parse(data) {
@@ -18,13 +18,13 @@ function parse(data) {
 	const fromLang = isAutoDetected ? data[0][2] : langDetails[1];
 	const toLang = langDetails[2];
 
-	// console.log(data.at(-1));
-	const translationOfDetails = parseTranslationMetadata(data);
+	const metadata = parseTranslationMetadata(data);
 
 	return {
 		fromLang,
 		toLang,
 		isAutoDetected,
+		metadata,
 	};
 }
 
@@ -32,23 +32,33 @@ function parse(data) {
 function parseTranslationMetadata(data) {
 	const rawMetadata = data.at(-1);
 
-	const [, definitionsRaw, examplesRaw, seeAlso1Raw, unknownRaw, translationsRaw] = rawMetadata;
+	const [, definitionsRaw, examplesRaw, seeAlsoRaw, unknownRaw, translationsRaw] = rawMetadata;
 	const definitions = parseDefinitions(definitionsRaw);
-	const examples = '';
-	const seeAlso1 = '';
-	const unknown = '';
-	const translations = '';
+	const examples = parseExamples(examplesRaw);
+	const seeAlso = parseSeeAlso(seeAlsoRaw);
+	const translations = parseTranslations(translationsRaw);
 
-	console.log(definitions);
+	return {
+		definitions,
+		examples,
+		seeAlso,
+		translations,
+	};
 }
 
-/** @type {Array} rawDefinitions */
-function parseDefinitions(rawDefinitions) {
+/** @type {Array} rawValue */
+function parseDefinitions(rawValue) {
 	const output = {
-		tags: rawDefinitions.at(-1)[0] || [],
+		tags: [],
+		noun: [],
+		verb: [],
+		abbreviation: [],
 	};
+	if (!rawValue) return output;
 
-	rawDefinitions[0].forEach(item => {
+	output.tags = rawValue.at(-1)[0] || [];
+
+	rawValue[0].forEach(item => {
 		const key = item[0];
 		const value = item[1].map(i => {
 			const [text, description = null, unknown1, unknown2, labelsRaw, synonymsRaw] = i;
@@ -58,6 +68,52 @@ function parseDefinitions(rawDefinitions) {
 				description,
 				labels: labelsRaw?.flat?.() || [],
 				synonyms: synonymsRaw?.[0]?.[0]?.flat?.() || [],
+			};
+		});
+		output[key] = value;
+	});
+
+	return output;
+}
+
+/** @type {Array} rawValue */
+function parseExamples(rawValue) {
+	if (!rawValue) return [];
+	return rawValue[0].map(item => JSON.parse(`"${item[1]}"`));
+}
+
+/** @type {Array} rawValue */
+function parseSeeAlso(rawValue) {
+	if (!rawValue) return [];
+	return rawValue[0];
+}
+
+/** @type {Array} rawValue */
+function parseTranslations(rawValue) {
+	const output = {
+		verb: [],
+		adjective: [],
+		noun: [],
+	};
+	if (!rawValue) return output;
+
+	rawValue[0].forEach(item => {
+		const key = item[0];
+		const value = item[1].map(i => {
+			const [label, gender = null, translations, frequencyRaw] = i;
+
+			const frequencyMap = {
+				1: 'common',
+				2: 'uncommon',
+				3: 'rare',
+			};
+			const frequency = frequencyMap[frequencyRaw] || 'unknown';
+
+			return {
+				label,
+				gender,
+				translations,
+				frequency,
 			};
 		});
 		output[key] = value;
