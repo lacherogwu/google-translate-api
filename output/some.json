@@ -1,0 +1,331 @@
+[
+  [
+    "səm",
+    null,
+    null,
+    [
+      [
+        [
+          0,
+          [
+            [
+              [
+                null,
+                4
+              ]
+            ],
+            [
+              true
+            ]
+          ]
+        ]
+      ],
+      4
+    ],
+    [
+      [
+        "some",
+        null,
+        null,
+        4
+      ]
+    ],
+    null,
+    [
+      "some",
+      "en",
+      "iw",
+      true
+    ]
+  ],
+  [
+    [
+      [
+        null,
+        null,
+        null,
+        true,
+        null,
+        [
+          [
+            "כמה",
+            null,
+            null,
+            null,
+            [
+              [
+                "כמה",
+                [
+                  2
+                ],
+                []
+              ],
+              [
+                "כַּמָה",
+                [
+                  3
+                ],
+                []
+              ],
+              [
+                "קְצָת",
+                [
+                  3
+                ],
+                []
+              ],
+              [
+                "אֲחָדִים",
+                [
+                  3
+                ],
+                []
+              ],
+              [
+                "חלקם",
+                [
+                  5
+                ],
+                []
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "iw",
+    1,
+    "en",
+    [
+      "some",
+      "en",
+      "iw",
+      true
+    ]
+  ],
+  "en",
+  [
+    "some",
+    [
+      [
+        [
+          "article",
+          [
+            [
+              "an unspecified amount or number of.",
+              "I made some money running errands",
+              true
+            ],
+            [
+              "used to refer to someone or something that is unknown or unspecified.",
+              "I was talking to some journalist the other day"
+            ],
+            [
+              "(used with a number) approximately.",
+              "some thirty different languages are spoken"
+            ],
+            [
+              "a considerable amount or number of.",
+              "he went to some trouble"
+            ],
+            [
+              "at least a small amount or number of.",
+              "he liked some music but generally wasn't musical"
+            ],
+            [
+              "expressing admiration of something notable.",
+              "that was some goal"
+            ]
+          ],
+          null,
+          13
+        ],
+        [
+          "pronoun",
+          [
+            [
+              "an unspecified number or amount of people or things.",
+              "here are some of our suggestions",
+              true
+            ],
+            [
+              "at least a small amount or number of people or things.",
+              "surely some have noticed"
+            ]
+          ],
+          null,
+          8
+        ],
+        [
+          "suffix",
+          [
+            [
+              "forming adjectives meaning.",
+              null,
+              true
+            ],
+            [
+              "productive of.",
+              "loathsome"
+            ],
+            [
+              "characterized by being.",
+              "wholesome"
+            ],
+            [
+              "(forming nouns) denoting a group of a specified number.",
+              "foursome"
+            ],
+            [
+              "denoting a portion of a body, especially a particle of a cell.",
+              "chromosome"
+            ]
+          ],
+          null,
+          12
+        ]
+      ],
+      13,
+      true
+    ],
+    [
+      [
+        [
+          null,
+          "I made <b>some</b> money running errands"
+        ],
+        [
+          null,
+          "he played <b>some</b> records for me"
+        ],
+        [
+          null,
+          "I was talking to <b>some</b> journalist the other day"
+        ],
+        [
+          null,
+          "here are <b>some</b> of our suggestions"
+        ],
+        [
+          null,
+          "he liked <b>some</b> music but generally wasn't musical"
+        ],
+        [
+          null,
+          "that was <b>some</b> goal"
+        ],
+        [
+          null,
+          "if you want whiskey I'll give you <b>some</b>"
+        ],
+        [
+          null,
+          "there must be <b>some</b> mistake"
+        ],
+        [
+          null,
+          "he went to <b>some</b> trouble"
+        ],
+        [
+          null,
+          "<b>some</b> thirty different languages are spoken"
+        ],
+        [
+          null,
+          "he's in <b>some</b> kind of trouble"
+        ],
+        [
+          null,
+          "surely <b>some</b> have noticed"
+        ],
+        [
+          null,
+          "I've known you for <b>some</b> years now"
+        ]
+      ],
+      12,
+      13
+    ],
+    null,
+    null,
+    [
+      [
+        [
+          "pronoun",
+          [
+            [
+              "כַּמָה",
+              null,
+              [
+                "some"
+              ],
+              1,
+              true
+            ],
+            [
+              "קְצָת",
+              null,
+              [
+                "some"
+              ],
+              1,
+              true
+            ],
+            [
+              "אֲחָדִים",
+              null,
+              [
+                "some"
+              ],
+              2,
+              true
+            ],
+            [
+              "מִקצָת",
+              null,
+              [
+                "some"
+              ],
+              3,
+              true
+            ],
+            [
+              "מְעַט",
+              null,
+              [
+                "some"
+              ],
+              3,
+              true
+            ],
+            [
+              "אֵי אֵלוּ",
+              null,
+              [
+                "some"
+              ],
+              3,
+              true
+            ],
+            [
+              "אֵיזֶה שֶׁהוּ",
+              null,
+              [
+                "some"
+              ],
+              3,
+              true
+            ]
+          ],
+          "iw",
+          "en"
+        ]
+      ],
+      7
+    ],
+    "səm",
+    null,
+    "en",
+    1
+  ]
+]

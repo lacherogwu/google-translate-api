@@ -1,29 +1,32 @@
-import fs from 'fs/promises';
+const defaultOptions = {
+	from: 'auto',
+	to: 'en',
+};
 
-const filename = 'some';
-const jsonRaw = await fs.readFile(`./output/${filename}.json`, 'utf-8');
+translate('cool', { to: 'ar' });
 
-/** @type {Array} */
-const json = JSON.parse(jsonRaw);
-// console.log(json.at(-1).at(5));
-// console.log(JSON.stringify(json[0], null, 2));
-
-console.log(JSON.stringify(parse(json), null, 2));
+async function translate(text, options = defaultOptions) {
+	const rawText = await sendApiRequest(text, options.from, options.to);
+	const json = convertRawToJson(rawText);
+	const parsed = parse(json);
+	// console.log(parsed);
+	console.log(JSON.stringify(parsed, null, 2));
+}
 
 /** @param {Array} data */
 function parse(data) {
 	const langDetails = data[0].at(-1);
 	const isAutoDetected = langDetails[1] === 'auto';
 
-	const fromLang = isAutoDetected ? data[0][2] : langDetails[1];
-	const toLang = langDetails[2];
+	const from = isAutoDetected ? data[0][2] : langDetails[1];
+	const to = langDetails[2];
 
 	const metadata = parseTranslationMetadata(data);
 	// const metadata = undefined;
 
 	return {
-		fromLang,
-		toLang,
+		from,
+		to,
 		isAutoDetected,
 		metadata,
 	};
@@ -121,4 +124,46 @@ function parseTranslations(rawValue) {
 	});
 
 	return output;
+}
+
+function convertRawToJson(rawText) {
+	const firstPart = JSON.parse(rawText.split('\n')[3]);
+	const json = JSON.parse(firstPart[0][2]);
+	return json;
+}
+
+async function sendApiRequest(text, from, to) {
+	const url = buildUrl();
+	const body = buildBody(text, from, to);
+	const res = await fetch(url, {
+		headers: {
+			'content-type': 'application/x-www-form-urlencoded;charset=UTF-8',
+		},
+		body,
+		method: 'POST',
+	});
+
+	return await res.text();
+}
+function buildUrl() {
+	const url = 'https://translate.google.com/_/TranslateWebserverUi/data/batchexecute';
+	const params = {
+		rpcids: 'MkEWBc',
+		'source-path': '%2F',
+		'f.sid': '6049192754589826213',
+		bl: 'boq_translate-webserver_20230425.07_p0',
+		hl: 'en',
+		'soc-app': '1',
+		'soc-platform': '1',
+		'soc-device': '1',
+		_reqid: '81709',
+		rt: 'c',
+	};
+	const queryParms = new URLSearchParams(params);
+	return `${url}?${queryParms}`;
+}
+
+function buildBody(text, from, to) {
+	const value = `[[["MkEWBc","[[\\"${text}\\",\\"${from}\\",\\"${to}\\",true],[null]]",null,"generic"]]]&at=ABklwfa5HnoewXBLB2EC3vky4g3f:1682624508157&`;
+	return `f.req=${encodeURIComponent(value)}`;
 }
